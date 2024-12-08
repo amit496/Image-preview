@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy Text Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        #copy_message {
+            display: none;
+            background: #0bb566;
+            color: #fff;
+            padding: 10px;
+            margin-top: 10px;
+            margin-left: 40px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="method_four_code_container" style="border: 1px solid #ccc; padding: 20px; width: 100%;">
+    <button onclick="method_four_code();"  style="background: rgb(125, 4, 238); border: none; outline: none; padding: 10px 30px; color: #fff; letter-spacing: 1px; cursor: pointer; margin-bottom: 5px;" id="method_four_button">Copy</button>
+    <div id="method_four_code_box">
+        Ek paragraph111
+    </div>
+</div>
+
+
+
+<script>
+function method_four_code() {
+    var text = document.getElementById("method_four_code_box").innerText;
+    var tempInput = document.createElement("textarea");
+    tempInput.value = text;
+    document.body.appendChild(tempInput);
+    tempInput.select();
+    document.execCommand("copy");
+    document.body.removeChild(tempInput);
+    var messageElement = document.getElementById("method_four_button");
+    messageElement.innerHTML = "Copied! &#10003;";
+    setTimeout(function () {
+        messageElement.innerText = "Copy";
+    }, 5000);
+}
+</script>
+
+
+
+
+
+
+
+</body>
+
+</html>

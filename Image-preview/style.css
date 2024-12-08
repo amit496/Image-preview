@@ -1,39 +1,4 @@
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
-.card-header
-{
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    color: #ffff;
-}
-
-#submit-id
-{
-    background: #0f0c29;
-    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); 
-    color: #ffff;
-    padding: 10px 35px;
-    font-size: 20px;
-    margin-left: 4em;
-}
-
-#imageobject
-{
-    background: linear-gradient(white, white) padding-box,
-    linear-gradient(to right, darkblue, darkorchid) border-box;
-    border: 4px solid transparent;
-}
-
-#heading
-{
-    font-weight: bold;
-    font-size: 20px;
-}
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
